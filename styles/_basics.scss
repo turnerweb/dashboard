@@ -7,3 +7,16 @@
     list-style-type: none;
     text-decoration: none;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: hsl(230, 17%, 14%);
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
