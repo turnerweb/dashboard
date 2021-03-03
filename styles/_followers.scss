@@ -13,7 +13,7 @@
 
     &__card {
         padding: 35px;
-        background-color: hsl(228, 28%, 20%);
+        background-color: $card-bg;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -52,6 +52,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &__icon {
+        width: 30px;
     }
 
     &__username {

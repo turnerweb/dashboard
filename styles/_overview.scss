@@ -1,0 +1,64 @@
+.overview {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    row-gap: 30px;
+
+    @include media {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+
+    &__card {
+        padding: 30px;
+        background-color: $card-bg;
+        border-radius: 5px;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    &__likes {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $sec-text;
+    }
+
+    &__icon {
+        width: 30px;
+    }
+
+    &__stats {
+        @extend .overview__head;
+        margin-top: 50px;
+    }
+
+    &__number {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    &__percent-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__percent {
+        margin-left: 5px;
+        font-weight: 700;
+
+        &--up {
+            color: $up;
+        }
+
+        &--down {
+            color: $down;
+        }
+    }
+}
