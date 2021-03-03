@@ -1,0 +1,94 @@
+.followers {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 30px;
+
+    @include media {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        column-gap: 30px;
+    }
+
+    &__card {
+        padding: 35px;
+        background-color: hsl(228, 28%, 20%);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    &__border {
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        &--facebook {
+            background:hsl(203, 89%, 53%);    
+        }
+
+        &--twitter {
+           background: hsl(203, 89%, 53%); 
+        }
+
+        &--insta {
+           background: linear-gradient(90deg,hsl(37, 97%, 70%), hsl(329, 70%, 58%)); 
+        }
+
+        &--youtube {
+           background: hsl(348, 97%, 39%); 
+        }
+    }
+
+    &__platform-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__username {
+        color: $sec-text;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    &__number {
+        margin-top: 20px;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    &__followers {
+        margin-top: 5px;
+        color: $sec-text;
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+    }
+
+    &__stats-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__daily {
+        margin-left: 5px;
+
+        &--up {
+            color: $up;
+        }
+
+        &--down {
+            color: $down;
+        }
+    }
+}
