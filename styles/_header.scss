@@ -39,6 +39,10 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
+        &.switch {
+            justify-content: flex-end;
+        }
     }
 
     &__toggle-btn {

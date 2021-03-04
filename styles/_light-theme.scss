@@ -1,0 +1,31 @@
+body {
+    &.light-theme {
+        background-color: white;
+        color: hsl(230, 17%, 14%);
+
+        .header-bg {
+            background-color: hsl(225, 100%, 98%)
+        }
+
+        .header__toggle-btn {
+            background-color: white;
+        }
+
+        .header__followers,
+        .header__dark,
+        .followers__username,
+        .followers__followers,
+        .overview__likes {
+            color: $sec-text-light;
+        }
+
+        .followers__card,
+        .overview__card {
+            background-color: hsl(227, 47%, 96%);
+
+            &:hover {
+                background-color: darken(hsl(227, 47%, 96%), 10%);
+            }
+        }
+    }
+}
